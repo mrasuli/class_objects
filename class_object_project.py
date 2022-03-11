@@ -12,8 +12,8 @@ class Employee:
 
     # def update_emp_firstname(self):
 
-    # def __str__(self):
-    #     return f"'first_name': '{self.first_name}', 'last_name': '{self.last_name}'"
+    def __str__(self):
+        return f"'first_name': '{self.first_name}', 'last_name': '{self.last_name}'"
 
     def get_first_name(self):
         return self.first_name
