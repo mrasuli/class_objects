@@ -235,25 +235,25 @@ def update_employee_data(
     field_option = read_option()
     if field_option == "first_name":
         new_first_name = read_first_name()
-        all_employees_dict[employee_id]["first_name"] = new_first_name
+        all_employees_dict[employee_id].set_first_name = new_first_name
     elif field_option == "last_name":
         new_last_name = read_last_name()
-        all_employees_dict[employee_id]["last_name"] = new_last_name
+        all_employees_dict[employee_id].set_last_name = new_last_name
     elif field_option == "employee_position":
         new_position = read_position()
-        all_employees_dict[employee_id]["employee_position"] = new_position
+        all_employees_dict[employee_id].set_emp_position = new_position
     elif field_option == "birth_year":
         new_birth_year = read_year()
-        all_employees_dict[employee_id]["birth_year"] = new_birth_year
+        all_employees_dict[employee_id].set_birth_year = new_birth_year
     elif field_option == "birth_month":
         new_birth_month = read_month()
-        all_employees_dict[employee_id]["birth_month"] = new_birth_month
+        all_employees_dict[employee_id].set_birth_month = new_birth_month
     elif field_option == "birth_day":
         new_birth_day = read_day()
-        all_employees_dict[employee_id]["birth_day"] = new_birth_day
+        all_employees_dict[employee_id].set_birth_day = new_birth_day
     elif field_option == "is_graduated":
         new_is_graduated = read_is_graduated()
-        all_employees_dict[employee_id]["is_graduated"] = new_is_graduated
+        all_employees_dict[employee_id].set_ids = new_is_graduated
     print(f"Field{field_option} for entry iD {employee_id} has been changed.")
 
 
